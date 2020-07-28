@@ -1,451 +1,529 @@
-﻿<!DOCTYPE html>
+﻿<!-- @format -->
+
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="img/icon" href="images/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="img/icon" href="images/logo.png" />
     <title>Rj Accessories</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-
-
-
-
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v5.0'
-            });
-        };
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v5.0",
+        });
+      };
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
     </script>
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="102687471229216" theme_color="#fecb1c"
-        logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
-    </div>
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="102687471229216"
+      theme_color="#fecb1c"
+      logged_in_greeting="Hi! How can we help you?"
+      logged_out_greeting="Hi! How can we help you?"
+    ></div>
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <div class="preloader">
-        <img src="images/preeloader.gif" alt="preeloader.gif">
+      <img src="images/preeloader.gif" alt="preeloader.gif" />
     </div>
 
     <div id="hamburger-menu">
-        <a onclick="offFun()" href="javascript:void()"><i class="fas fa-times"></i></a>
-        <ul>
-            <li><a onclick="offFun()" href="#work">Service</a></li>
-            <li><a onclick="offFun()" href="#about">About</a></li>
-            <li><a onclick="offFun()" href="#contact">Contact</a></li>
-        </ul>
+      <a onclick="offFun()" href="javascript:void()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <ul>
+        <li><a onclick="offFun()" href="#work">Service</a></li>
+        <li><a onclick="offFun()" href="#about">About</a></li>
+        <li><a onclick="offFun()" href="#contact">Contact</a></li>
+      </ul>
     </div>
 
     <header id="header" class="stick-menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 col-sm-2 col-md-3">
-                    <div class="logo">
-                        <a href="#"><img src="images/logo.png" alt="logo.png"></a>
-                    </div>
-                </div>
-                <div class="col-4 col-sm-6 col-md-6">
-                    <div class="menu-trgger">
-
-                    </div>
-                    <div class="main-menu">
-                        <ul>
-                            <li><a href="#work">Service</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-
-                        <div onclick="onFun()" class="menu-trgger">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 text-right">
-                    <a class="tel-btn" href="tel:+8801711945022" role="button"><span>+880 1711 945 022</span></a>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8 col-sm-2 col-md-3">
+            <div class="logo">
+              <a href="#"><img src="images/logo.png" alt="logo.png" /></a>
             </div>
+          </div>
+          <div class="col-4 col-sm-6 col-md-6">
+            <div class="menu-trgger"></div>
+            <div class="main-menu">
+              <ul>
+                <li><a href="#work">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+
+              <div onclick="onFun()" class="menu-trgger">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 text-right">
+            <a class="tel-btn" href="tel:+8801711945022" role="button"
+              ><span>+880 1711 945 022</span></a
+            >
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section id="hero-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="hero-text_wrapper">
-                            <div class="hero-text">
-                                <h1 class="wow slideInDown" data-wow-delay="1s"><span>rj accessories</span></h1>
-                                <p class="wow slideInUp" data-wow-delay="1.1s">A Reliable Support Team of
-                                    <span>Garments,Under Garments, Garments Accessories &amp; Textile</span></p>
-                                <a href="mailto:info@rjaccessories.com" class="boxed-btn wow slideInUp"
-                                    data-wow-delay=".3s" data-wow-offset="50"><span>Talk with us</span></a>
-
-                            </div>
-                        </div>
-                    </div>
+      <section id="hero-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="hero-text_wrapper">
+                <div class="hero-text">
+                  <h1 class="wow slideInDown" data-wow-delay="1s">
+                    <span>rj accessories</span>
+                  </h1>
+                  <p class="wow slideInUp" data-wow-delay="1.1s">
+                    A Reliable Support Team of
+                    <span
+                      >Garments,Under Garments, Garments Accessories &amp;
+                      Textile</span
+                    >
+                  </p>
+                  <a
+                    href="mailto:info@rjaccessories.com"
+                    class="boxed-btn wow slideInUp"
+                    data-wow-delay=".3s"
+                    data-wow-offset="50"
+                    ><span>Talk with us</span></a
+                  >
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Portfolio area -->
+      <!-- Portfolio area -->
 
-        <section id="work">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="section-title wow slideInLeft">
-                            <h2 class="wow slideInLeft">Service</h2>
-                            <span class="section-title_background wow slideInLeft" data-wow-delay=".1s"><i
-                                    class="fas fa-stream"></i></span>
-                            <p class="wow slideInLeft" data-wow-delay=".4s"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <hr class="dark-line">
-                </div>
-                <div class="row mobile-h-overflow">
-                    <div class="portfolio-carousel wow slideInUp">
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/1.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Accessories
-
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/2.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Push up Bra
-
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/3.png">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Jeans Pant (Denim)
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/4.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Shirt
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/5.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Net Panty
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/6.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Design Fabrics
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/7.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Polo T-Shirt
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/8.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Soft net Spandex Bra
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/9.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Roll Fabrics
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/10.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Net Spandex Panty
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/11.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Hoody
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="single-portfolio">
-                            <figure>
-                                <img src="./images/work/12.jpg">
-                                <figcaption>
-                                    <p class="portfolio-content">
-                                        Zipper (Chain)
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <hr class="dark-line">
-                </div>
-                <div class="row work-cta">
-                    <div class="col-md-6">
-                        <div class="follow-us_text">
-                            <p class="wow slideInLeft">Do you want to see more? <a href="#">Follow Us:</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <div class="socila-links">
-                            <a class="wow slideInLeft" data-wow-delay=".1s" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="wow slideInLeft" data-wow-delay=".15s" href="#"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="wow slideInLeft" data-wow-delay=".2s" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="wow slideInLeft" data-wow-delay=".25s" href="https://web.facebook.com/brantybd/"
-                                target="_blnak"><i class="fab fa-facebook-f"></i></a>
-                            <a class="wow slideInLeft" data-wow-delay=".3s" href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <section id="work">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="section-title wow slideInLeft">
+                <h2 class="wow slideInLeft">Service</h2>
+                <span
+                  class="section-title_background wow slideInLeft"
+                  data-wow-delay=".1s"
+                  ><i class="fas fa-stream"></i
+                ></span>
+                <p class="wow slideInLeft" data-wow-delay=".4s"></p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="row">
+            <hr class="dark-line" />
+          </div>
+          <div class="row mobile-h-overflow">
+            <div class="portfolio-carousel wow slideInUp">
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/1.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Accessories
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/2.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Push up Bra
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/3.png" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Jeans Pant (Denim)
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/4.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Shirt
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/5.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Net Panty
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/6.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Design Fabrics
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/7.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      T-Shirt (Polo)
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/8.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Soft net Spandex Bra
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/9.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Roll Fabrics
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/10.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Net Spandex Panty
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/11.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Hoody
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="single-portfolio">
+                <figure>
+                  <img src="./images/work/12.jpg" />
+                  <figcaption>
+                    <p class="portfolio-content">
+                      Zipper (Chain)
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <hr class="dark-line" />
+          </div>
+          <div class="row work-cta">
+            <div class="col-md-6">
+              <div class="follow-us_text">
+                <p class="wow slideInLeft">
+                  Do you want to see more? <a href="#">Follow Us:</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 text-right">
+              <div class="socila-links">
+                <a class="wow slideInLeft" data-wow-delay=".1s" href="#"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="wow slideInLeft" data-wow-delay=".15s" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="wow slideInLeft" data-wow-delay=".2s" href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="wow slideInLeft"
+                  data-wow-delay=".25s"
+                  href="https://web.facebook.com/brantybd/"
+                  target="_blnak"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="wow slideInLeft" data-wow-delay=".3s" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- about area -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="section-title text-white">
+                <h2 class="wow slideInLeft">about</h2>
+                <p class="wow slideInLeft" data-wow-delay=".4s">
+                  RJ ACCESSORIES has started its journey in the field of
+                  Readymade garments, Under garments, Garments Accessories and
+                  textile in the year of 2014. Presently it has been established
+                  as a Leading &amp; Quality manufacturer of Readymade garments,
+                  Under garments, Garments Accessories and textile in the
+                  country. It is located at Dhaka, Bangladesh with modern state
+                  of art machinery. It is now able to cater the need of valuable
+                  RMG Buyers & can solve the Readymade garments, Under garments,
+                  Garments Accessories and textile solution of RMG Buyers under
+                  one roof. We are committed to deliver of quality products with
+                  standards to our valuable customers to their utmost
+                  satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <hr class="dark-line collored" />
+          </div>
 
-        <!-- about area -->
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="section-title text-white">
-                            <h2 class="wow slideInLeft">about</h2>
-                            <p class="wow slideInLeft" data-wow-delay=".4s">RJ ACCESSORIES has started its journey in
-                                the field of Readymade garments, Under garments, Garments Accessories and textile in the
-                                year of 2014. Presently it has been established as a Leading &amp; Quality manufacturer
-                                of Readymade garments, Under garments, Garments Accessories and textile in the country.
-                                It is located at Dhaka, Bangladesh with modern state of art machinery. It is now able to
-                                cater the need of valuable RMG Buyers & can solve the Readymade garments, Under
-                                garments, Garments Accessories and textile solution of RMG Buyers under one roof. We are
-                                committed to deliver of quality products with standards to our valuable customers to
-                                their utmost satisfaction. </p>
-                        </div>
-                    </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="single-team text-center">
+                <img
+                  class="wow slideInUp"
+                  src="./images/team-member-1.jpg"
+                  alt="team-member-1.jpg"
+                />
+                <h3 class="wow slideInUp">
+                  Fazly Rabby <span>Managing Director</span>
+                </h3>
+
+                <div class="socila-links">
+                  <a class="wow slideInUP" data-wow-delay=".15s" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a class="wow slideInUp" data-wow-delay=".2s" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="wow slideInUp"
+                    data-wow-delay=".25s"
+                    href="https://web.facebook.com/fazly.rabby.rja"
+                    target="_blnak"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="wow slideInUp" data-wow-delay=".3s" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </div>
-                <div class="row">
-                    <hr class="dark-line collored">
-                </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="single-team text-center">
-                            <img class="wow slideInUp" src="./images/team-member-1.jpg" alt="team-member-1.jpg">
-                            <h3 class="wow slideInUp">Fazly Rabby <span>Managing Director</span></h3>
+          <div class="row">
+            <hr class="dark-line collored" />
+          </div>
 
-                            <div class="socila-links">
-                                <a class="wow slideInUP" data-wow-delay=".15s" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="wow slideInUp" data-wow-delay=".2s" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="wow slideInUp" data-wow-delay=".25s"
-                                    href="https://web.facebook.com/fazly.rabby.rja" target="_blnak"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="wow slideInUp" data-wow-delay=".3s" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <hr class="dark-line collored">
-                </div>
-
-                <div class="row what-we-do">
-
-                    <div class="col-md-2">
-                        <h3 class="wow slideInLeft">we specialize in:</h3>
-                    </div>
-                    <div class="col-md-2 col-6 col-sm-3">
-                        <div class="single-specilize wow slideInLeft" data-wow-delay=".15s">
-                            <img src="./images/icon1.png" alt="icon1.png">
-                            <h4></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6 col-sm-3">
-                        <div class="single-specilize wow slideInLeft" data-wow-delay=".25s">
-                            <img src="./images/icon2.png" alt="icon2.png">
-                            <h4></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6 col-sm-3">
-                        <div class="single-specilize wow slideInLeft" data-wow-delay=".35s">
-                            <img src="./images/icon3.png" alt="icon3.png">
-                            <h4></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6 col-sm-3">
-                        <div class="single-specilize wow slideInLeft" data-wow-delay=".45s">
-                            <img src="./images/icon4.png" alt="icon4.png">
-                            <h4></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6 col-sm-3">
-                        <!-- <div class="single-specilize">
+          <div class="row what-we-do">
+            <div class="col-md-2">
+              <h3 class="wow slideInLeft">we specialize in:</h3>
+            </div>
+            <div class="col-md-2 col-6 col-sm-3">
+              <div
+                class="single-specilize wow slideInLeft"
+                data-wow-delay=".15s"
+              >
+                <img src="./images/icon1.png" alt="icon1.png" />
+                <h4></h4>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 col-sm-3">
+              <div
+                class="single-specilize wow slideInLeft"
+                data-wow-delay=".25s"
+              >
+                <img src="./images/icon2.png" alt="icon2.png" />
+                <h4></h4>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 col-sm-3">
+              <div
+                class="single-specilize wow slideInLeft"
+                data-wow-delay=".35s"
+              >
+                <img src="./images/icon3.png" alt="icon3.png" />
+                <h4></h4>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 col-sm-3">
+              <div
+                class="single-specilize wow slideInLeft"
+                data-wow-delay=".45s"
+              >
+                <img src="./images/icon4.png" alt="icon4.png" />
+                <h4></h4>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 col-sm-3">
+              <!-- <div class="single-specilize">
                             <img src="./images/icon5.png">
                             <h4>UX/UI</h4>
                         </div> -->
-                    </div>
-                </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- contact area -->
+      <!-- contact area -->
 
-        <section id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="section-title text-center">
-                            <h2 class="wow slideInLeft">Contact</h2>
-                            <span class="section-title_background wow slideInLeft" data-wow-delay=".1s"><i
-                                    class="fas fa-paper-plane"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <hr class="dark-line mtm-20">
-                </div>
-                <div class="row content-center">
-                    <div class="contact-content">
-                        <p class="wow slideInLeft">We’re always looking for new projects to work on, <br> if you have
-                            some please write us!</p>
-                        <span class="contact-mail"><a
-                                href="mailto:info@rjaccessories.com">info@rjaccessories.com</a></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <hr class="dark-line">
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="contact-phone wow slideInLeft" data-wow-delay=".1s">
-                            <div class="contact-icon">
-                                <i class="far fa-comment-alt"></i>
-                            </div>
-                            <a href="tel:+8801711945022">+880 1711 945 022</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-location wow slideInLeft" data-wow-delay=".15s">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <a href="#">Dhaka,Bangladesh</a>
-                        </div>
-                    </div>
-                </div>
+      <section id="contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title text-center">
+                <h2 class="wow slideInLeft">Contact</h2>
+                <span
+                  class="section-title_background wow slideInLeft"
+                  data-wow-delay=".1s"
+                  ><i class="fas fa-paper-plane"></i
+                ></span>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="row">
+            <hr class="dark-line mtm-20" />
+          </div>
+          <div class="row content-center">
+            <div class="contact-content">
+              <p class="wow slideInLeft">
+                We’re always looking for new projects to work on, <br />
+                if you have some please write us!
+              </p>
+              <span class="contact-mail"
+                ><a href="mailto:info@rjaccessories.com"
+                  >info@rjaccessories.com</a
+                ></span
+              >
+            </div>
+          </div>
+          <div class="row">
+            <hr class="dark-line" />
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-phone wow slideInLeft" data-wow-delay=".1s">
+                <div class="contact-icon">
+                  <i class="far fa-comment-alt"></i>
+                </div>
+                <a href="tel:+8801711945022">+880 1711 945 022</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="contact-location wow slideInLeft"
+                data-wow-delay=".15s"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <a href="#">Dhaka,Bangladesh</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="socila-links">
-                        <a class="wow slideInLeft" data-wow-delay=".2s" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="wow slideInLeft" data-wow-delay=".25s" href="https://web.facebook.com/brantybd/"
-                            target="_blnak"><i class="fab fa-facebook-f"></i></a>
-                        <a class="wow slideInLeft" data-wow-delay=".3s" href="#"><i class="fab fa-twitter"></i></a>
-                        <!--          <a class="wow slideInLeft" data-wow-delay=".15s" href="https://business22.web-hosting.com:2096/"><i class="fas fa-at"></i></a> -->
-                    </div>
-                    <p>&copy; <a href="https://www.facebook.com/RevealTheme/"> ThemeReveal.</a><a href="#"> | Privacy
-                            Policy</a></p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="socila-links">
+              <a class="wow slideInLeft" data-wow-delay=".2s" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="wow slideInLeft"
+                data-wow-delay=".25s"
+                href="https://web.facebook.com/brantybd/"
+                target="_blnak"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="wow slideInLeft" data-wow-delay=".3s" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <!--          <a class="wow slideInLeft" data-wow-delay=".15s" href="https://business22.web-hosting.com:2096/"><i class="fas fa-at"></i></a> -->
             </div>
+            <p>
+              &copy;
+              <a href="https://www.facebook.com/RevealTheme/"> ThemeReveal.</a
+              ><a href="#"> | Privacy Policy</a>
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
-
-
-
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="https://kit.fontawesome.com/7deea8a0ae.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7deea8a0ae.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-</body>
-
+  </body>
 </html>
