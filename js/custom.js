@@ -21,11 +21,14 @@ $(function () {
             responsive: {
                 // breakpoint from 0 up
                 0: {
-                    items: 1
+                    items: 2,
+                    margin: 20,
                 },
                 // breakpoint from 480 up
                 480: {
+                    margin: 20,
                     items: 2
+
                 },
                 1000: {
                     items: 3
