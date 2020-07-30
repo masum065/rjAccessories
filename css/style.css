@@ -629,7 +629,7 @@
  }
 
  .single-specilize img {
-     max-width: 60px;
+     max-width: 60px !important;
  }
 
  /*================== Contact css =================== */
