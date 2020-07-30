@@ -16,7 +16,7 @@ $(function () {
             margin: 30,
             loop: true,
             nav: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 2000,
             navText: ["<i class='fa fa-angle-left'>", "<i class='fa fa-angle-right'>"],
             responsive: {
                 // breakpoint from 0 up
